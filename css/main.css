@@ -59,7 +59,13 @@ a, a:active, a:focus {
     overflow: hidden;
 }
 
+.left{
+    float: left;
+}
 
+.right{
+    float: right;
+}
 
 
 
@@ -118,7 +124,7 @@ fieldset{
     overflow: hidden;
 }
 
-input[type="text"], input[type="password"]{
+input[type="text"], input[type="password"], input[type="number"]{
     border: 0;
     outline: 0;
     background: #a0a7b3;
@@ -139,6 +145,8 @@ button{
 }
 
 .btn-gray{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 11px;!important;
     border-top: 1px solid #a3a297;
     border-bottom: 1px solid #656669;
     color: #fff;
@@ -155,6 +163,34 @@ button{
     background: linear-gradient(to bottom,  #747c81 0%,#535d65 50%,#535d65 50%,#434e57 50%,#4f5961 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#747c81', endColorstr='#4f5961',GradientType=0 );
 }
+
+.btn-gray:hover{
+    background: #4f5961;
+}
+
+.btn-green{
+    font-family: 'Roboto', sans-serif !important;;
+    font-size: 11px !important;;
+    border-top: 1px solid #a3a297;
+    color: #fff;
+    height: 25px;
+    border-radius: 3px;
+    padding: 0 14px;
+    background: #64ac6f;
+    background: -moz-linear-gradient(top,  #64ac6f 0%, #48975c 50%, #398d4f 50%, #409254 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#64ac6f), color-stop(50%,#48975c), color-stop(50%,#398d4f), color-stop(100%,#409254));
+    background: -webkit-linear-gradient(top,  #64ac6f 0%,#48975c 50%,#398d4f 50%,#409254 100%);
+    background: -o-linear-gradient(top,  #64ac6f 0%,#48975c 50%,#398d4f 50%,#409254 100%);
+    background: -ms-linear-gradient(top,  #64ac6f 0%,#48975c 50%,#398d4f 50%,#409254 100%);
+    background: linear-gradient(to bottom,  #64ac6f 0%,#48975c 50%,#398d4f 50%,#409254 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64ac6f', endColorstr='#409254',GradientType=0 );
+}
+
+.btn-green:hover{
+    background: #409254;
+}
+
+
 
 .login-form input[type="text"], .login-form input[type="password"]{
     float: left;
@@ -193,7 +229,7 @@ a.forgot:hover{
     z-index: 5;
     overflow: hidden;
     width: 100px;
-    height: 23px;
+    height: 25px;
     border-top: 1px solid #a3a297;
     border-bottom: 1px solid #656669;
     border-radius: 3px;
@@ -393,7 +429,6 @@ a.forgot:hover{
 
 }
 
-
 /* eof main nav */
 
 
@@ -495,7 +530,7 @@ a.forgot:hover{
     border-radius: 0;
     padding: 12px 10px 12px 28px;
     outline: 0;
-    margin-top: 1px;
+    margin-top: 0px;
 }
 
 .ui-accordion .ui-accordion-content{
@@ -526,13 +561,24 @@ a.forgot:hover{
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
     margin: 0 0 14px 0;
+    float: left;
+    width: 100%;
+}
+
+.bet-legend li span{
+    float: left;
+    width: 178px;
+    margin: 6px 0 0 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .bet-legend .legend-ico{
     width: 25px;
     height: 25px;
     border-radius: 3px;
-    display: inline-block;
+    float: left;
     font-size: 11px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
@@ -697,7 +743,6 @@ a.forgot:hover{
     width: 230px;
 }
 
-
 .game-box .bet_type_wrapper {
     width: 190px;
     float: left;
@@ -705,7 +750,6 @@ a.forgot:hover{
     font-family: 'Roboto', sans-serif;
     font-size: 11px;
 }
-
 
 .game-box .btn {
     display: block;
@@ -733,7 +777,6 @@ a.forgot:hover{
     text-transform: uppercase;
 }
 
-
 .game-box .btn.active, .game-box .btn:hover{
     background: #d9be7c;
     background: -moz-linear-gradient(top,  #d9be7c 0%, #d0ae5e 50%, #cca74f 50%, #cfac5a 100%);
@@ -760,7 +803,6 @@ a.forgot:hover{
     position: relative;
     margin-top: 2px;
 }
-
 
 .game-box .delete_bet {
     display: block;
@@ -802,7 +844,7 @@ a.forgot:hover{
 .ticket-system{
     float: left;
     width: 100%;
-    margin: 5px 0 0 0;
+    margin: 5px 0 10px 0;
 }
 
 .ticket-system a{
@@ -843,7 +885,7 @@ a.forgot:hover{
     display: none;
     background: #65696d;
     border-radius: 0 0 3px 3px;
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
     float: left;
     width: 100%;
 }
@@ -854,6 +896,17 @@ a.forgot:hover{
     float: left;
     width: 50%;
     margin: 0 0 5px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.system-select label input[type='checkbox']{
+    margin: 0;
+    float: left;
+}
+
+.system-select label .system-txt{
+    margin: 1px 0 0 4px;
+    float: left;
 }
 
 .ticket-system.active .system-select{
@@ -864,12 +917,120 @@ a.forgot:hover{
     background-position: -38px -111px;
 }
 
+.stakes{
+    float: left;
+    width: 100%;
+}
+
+.stakes .stake-single{
+    float: left;
+    width: 100%;
+    margin: 0 0 5px 0;
+}
+
+.stakes .stake-single .stake-txt{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: #000;
+    float: left;
+    margin: 6px 0 0 0;
+}
+
+.stakes .stake-single input[type='number']{
+    float: right;
+    width: 120px;
+    padding: 1px 0 0 8px;
+    border: 1px solid #363636;
+}
+
+input[type=number]::-webkit-inner-spin-button{
+    opacity: 0.5;
+}
+
+.action-btn-holder{
+    float: left;
+    width: 230px;
+    margin: 0 -10px 0 -10px;
+    padding: 10px 10px 0px 10px;
+    border-top: 1px solid #454746;
+}
+
+.action-btn-holder button{
+    min-width: 95px;
+    max-width: 95px;
+}
+
 /* eof ticket sidebar */
 
 
 /* eof sidebar */
 
 
+/* footer */
+
+.footer{
+    float: left;
+    width: 100%;
+    background: #171d22;
+    height: 52px;
+}
+
+.footer-links-wrapper{
+    float: left;
+    width: 815px;
+}
+
+.footer-links{
+    float: left;
+    width: 100%;
+    background: #747c81;
+    background: -moz-linear-gradient(top,  #747c81 0%, #535d65 50%, #535d65 50%, #434e57 50%, #4f5961 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#747c81), color-stop(50%,#535d65), color-stop(50%,#535d65), color-stop(50%,#434e57), color-stop(100%,#4f5961));
+    background: -webkit-linear-gradient(top,  #747c81 0%,#535d65 50%,#535d65 50%,#434e57 50%,#4f5961 100%);
+    background: -o-linear-gradient(top,  #747c81 0%,#535d65 50%,#535d65 50%,#434e57 50%,#4f5961 100%);
+    background: -ms-linear-gradient(top,  #747c81 0%,#535d65 50%,#535d65 50%,#434e57 50%,#4f5961 100%);
+    background: linear-gradient(to bottom,  #747c81 0%,#535d65 50%,#535d65 50%,#434e57 50%,#4f5961 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#747c81', endColorstr='#4f5961',GradientType=0 );
+}
+
+.footer-links ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li{
+    float: left;
+}
+
+.f-separator{
+    color: #fff;
+    margin: 0 5px;
+    padding: 6px 0;
+}
+
+.footer-links ul li a{
+    color: #fff;
+    padding: 6px 12px;
+    float: left;
+    font-size: 10px;
+}
+
+.copyright{
+    color: #aab2be;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 7px 10px 0px 10px;
+    float: left;
+}
+
+.payment-methods{
+    float: left;
+    width: 230px;
+}
+
+/* eof footer */
 
 
 

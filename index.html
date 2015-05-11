@@ -155,6 +155,7 @@
                             <span class="delete_bet"><span class="ico-delete"></span></span>
                         </div>
                     </div>
+
                     <div class="game-box">
                         <p class="title">
                             <span class="small-ball-ico"></span>
@@ -180,6 +181,7 @@
                             <span class="delete_bet"><span class="ico-delete"></span></span>
                         </div>
                     </div>
+
                     <div class="ticket-info">
                         <table>
                             <tr>
@@ -195,41 +197,39 @@
                         </table>
                     </div>
 
-
                     <div class="ticket-system">
                         <a href="#">System  <span class="arrow-down"></span></a>
                         <div class="system-select">
                             <label>
-                                <input type="checkbox">1 of <span class="betscount">6</span>
+                                <input type="checkbox"><span class="system-txt">1 of <span class="betscount">6</span></span>
                             </label>
                             <label>
-                                <input type="checkbox">1 of <span class="betscount">6</span>
+                                <input type="checkbox"><span class="system-txt">1 of <span class="betscount">6</span></span>
                             </label>
                             <label>
-                                <input type="checkbox">1 of <span class="betscount">6</span>
+                                <input type="checkbox"><span class="system-txt">1 of <span class="betscount">6</span></span>
                             </label>
                             <label>
-                                <input type="checkbox">1 of <span class="betscount">6</span>
+                                <input type="checkbox"><span class="system-txt">1 of <span class="betscount">6</span></span>
                             </label>
                         </div>
                     </div>
 
                     <div class="stakes">
-
-                        <div class="stake-per-bet">
-                            Stake per bet
-
+                        <div class="stake-single">
+                            <span class="stake-txt">Stake per bet</span>
+                            <input type="number" min="1" max="10">
                         </div>
-
-                        <div class="stake-total">
-                            Total stake
-
+                        <div class="stake-single">
+                            <span class="stake-txt">Total stake</span>
+                            <input type="number" min="1" max="10">
                         </div>
-
                     </div>
 
-
-
+                    <div class="action-btn-holder">
+                        <button class="btn-gray left">Reset</button>
+                        <button class="btn-green right">Send ticket</button>
+                    </div>
 
                 </div>
                 <!-- eof ticket -->
@@ -240,38 +240,85 @@
                     <ul class="bet-legend">
                         <li>
                             <div class="legend-ico match-possible"></div>
-                            Match will be possible to bet live
+                            <span>Match will be possible to bet live</span>
                         </li>
                         <li>
                             <div class="legend-ico match-before"></div>
-                            Bet can only be placed before match
+                            <span>Bet can only be placed before match</span>
                         </li>
                         <li>
                             <div class="legend-ico match-statistics"><div class="ico-statistics"></div></div>
-                            Match statistics
+                            <span>Match statistics</span>
                         </li>
                         <li>
                             <div class="legend-ico match-odd">1.4</div>
-                            Selected odd
+                            <span>Selected odd</span>
                         </li>
                         <li>
                             <div class="legend-ico match-other-odds">+7</div>
-                            Other odds
+                            <span>Other odds</span>
                         </li>
                         <li>
                             <div class="legend-ico match-blocked"><div class="ico-blocked"></div></div>
-                            Blocked and not available odds
+                            <span>Blocked and not available odds</span>
                         </li>
                     </ul>
                 </div>
                 <!-- eof legend -->
 
-
             </div>
 
         </div>
 
-
+        <div class="footer">
+            <div class="footer-links-wrapper">
+                <div class="footer-links">
+                    <ul>
+                        <li>
+                            <a href="#">Company</a>
+                        </li>
+                        <li class="f-separator">|</li>
+                        <li>
+                            <a href="#">Career</a>
+                        </li>
+                        <li class="f-separator">|</li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="f-separator">|</li>
+                        <li>
+                            <a href="#">Mobile App</a>
+                        </li>
+                        <li class="f-separator">|</li>
+                        <li>
+                            <a href="#">Franchise</a>
+                        </li>
+                        <li class="f-separator">|</li>
+                        <li>
+                            <a href="#">Liability</a>
+                        </li>
+                        <li class="f-separator">|</li>
+                        <li>
+                            <a href="#">Terms & Conditions</a>
+                        </li>
+                        <li class="f-separator">|</li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li class="f-separator">|</li>
+                        <li>
+                            <a href="#">Imprint</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    © 2015 Copyrights. All rights reserved.
+                </div>
+            </div>
+            <div class="payment-methods">
+                <img alt="payment-methods" src="img/payment-methods.png" width="230" height="52">
+            </div>
+        </div>
 
 
 
