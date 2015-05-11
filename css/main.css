@@ -190,7 +190,9 @@ button{
     background: #409254;
 }
 
-
+a.btn-gray, a.btn-green{
+    padding: 5px 14px;
+}
 
 .login-form input[type="text"], .login-form input[type="password"]{
     float: left;
@@ -411,7 +413,6 @@ a.forgot:hover{
     padding-top: 12px;
 }
 
-
 .main-navigation li.green .line{
     background: #409254;
 }
@@ -426,7 +427,22 @@ a.forgot:hover{
     background: -ms-linear-gradient(top,  #64ac6f 0%,#48975c 50%,#398d4f 50%,#409254 100%);
     background: linear-gradient(to bottom,  #64ac6f 0%,#48975c 50%,#398d4f 50%,#409254 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64ac6f', endColorstr='#409254',GradientType=0 );
+}
 
+.main-navigation li.blue .line{
+    background: #0c5892;
+}
+
+.main-navigation li.blue.active a{
+    border-top: 1px solid #30b0da;
+    background: #52839f;
+    background: -moz-linear-gradient(top,  #52839f 0%, #3a6687 50%, #2b5a7d 50%, #0c5892 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#52839f), color-stop(50%,#3a6687), color-stop(50%,#2b5a7d), color-stop(100%,#0c5892));
+    background: -webkit-linear-gradient(top,  #52839f 0%,#3a6687 50%,#2b5a7d 50%,#0c5892 100%);
+    background: -o-linear-gradient(top,  #52839f 0%,#3a6687 50%,#2b5a7d 50%,#0c5892 100%);
+    background: -ms-linear-gradient(top,  #52839f 0%,#3a6687 50%,#2b5a7d 50%,#0c5892 100%);
+    background: linear-gradient(to bottom,  #52839f 0%,#3a6687 50%,#2b5a7d 50%,#0c5892 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52839f', endColorstr='#0c5892',GradientType=0 );
 }
 
 /* eof main nav */
@@ -440,6 +456,12 @@ a.forgot:hover{
     width: 815px;
     min-height: 700px;
     background: #0d0f0b;
+}
+
+.content.content-full{
+    float: left;
+    width: 1045px;
+    padding: 20px 37px;
 }
 
 .game-tabs{
@@ -965,6 +987,70 @@ input[type=number]::-webkit-inner-spin-button{
 
 
 /* eof sidebar */
+
+
+/* casino */
+
+.casino-type-btns{
+    float: left;
+    width: 100%;
+    margin: 0 0 15px 0;
+    padding-left: 5px;
+}
+
+.casino-type-btns a{
+    text-transform: uppercase;
+    float: left;
+    margin: 0 7px 0 0;
+}
+
+.casino-game{
+    width: 184px;
+    float: left;
+    margin: 5px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    background: #1f2930;
+}
+
+.casino-game img{
+    float: left;
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+}
+
+.casino-txt{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.casino-game-name{
+    float: left;
+    width: 100%;
+    color: #fff;
+    margin: 0 0 2px 0;
+}
+
+.casino-play{
+    float: left;
+    width: 100%;
+    color: #247916;
+    text-transform: uppercase;
+}
+
+.casino-game:hover{
+    background: #3a4c59;
+}
+
+.casino-game:hover img{
+    opacity: 0.9;
+}
+
+/* eof casino */
 
 
 /* footer */
