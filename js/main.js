@@ -16,6 +16,10 @@ $( document ).ready(function() {
         heightStyle: "content"
     });
 
+    // system
+    $( ".ticket-system" ).click(function() {
+        $( this ).toggleClass( "active" );
+    });
 
 
 });

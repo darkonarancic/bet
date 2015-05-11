@@ -1,8 +1,9 @@
 @CHARSET "UTF-8";
 
 *{
-    margin: 0;
-    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html{
@@ -184,6 +185,7 @@ a.forgot:hover{
 /* language list */
 
 .language-list{
+    padding: 0;
     float: right;
     margin: 10px 0 0 0;
     list-style: none;
@@ -417,7 +419,7 @@ a.forgot:hover{
 .game-tabs li {
     float: left;
     height: 75px;
-    width: 46px;
+    width: 47px;
     border-left: solid 1px #101010;
     text-align: center;
     font-size: 10px;
@@ -463,27 +465,6 @@ a.forgot:hover{
     display: block;
     font-style: normal;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* eof content */
 
@@ -534,6 +515,8 @@ a.forgot:hover{
 
 .bet-legend{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .bet-legend li{
@@ -547,7 +530,7 @@ a.forgot:hover{
 
 .bet-legend .legend-ico{
     width: 25px;
-    height: 13px;
+    height: 25px;
     border-radius: 3px;
     display: inline-block;
     font-size: 11px;
@@ -644,13 +627,244 @@ a.forgot:hover{
 }
 
 
+/* ticket sidebar */
+
+.game-box {
+    background: none;
+    float: left;
+    width: 100%;
+    margin: 0 0 10px 0;
+    font-size: 10px;
+    color: #000;
+}
+
+.game-box .title {
+    font-size: 11px;
+    clear: both;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 5px 0;
+    font-weight: 500;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.small-ball-ico{
+    width: 12px;
+    height: 12px;
+    background: url('../img/sprite.png') no-repeat -37px -55px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.game-box .title .teams{
+    padding: 0 0 0 15px;
+    float: left;
+    font-weight: 600;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.game-box .ticket-result{
+    float: left;
+    margin-bottom: 3px;
+}
+
+.game-box .ticket-time{
+    float: right;
+    margin-bottom: 3px;
+}
+
+.game-box .line {
+    clear: both;
+    border-top: solid 1px #454746;
+    border-bottom: solid 1px #454746;
+    background: #908f8d;
+    padding: 4px 30px 4px 7px;
+    margin: -1px 0 0 0;
+    font-weight: 700;
+    line-height: 20px;
+    position: relative;
+    margin-left: -10px;
+    margin-right: -10px;
+    float: left;
+    width: 230px;
+}
 
 
+.game-box .bet_type_wrapper {
+    width: 190px;
+    float: left;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+}
 
 
+.game-box .btn {
+    display: block;
+    float: left;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #707577;
+    border-radius: 3px;
+    margin: 0 10px 0 0;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    line-height: 21px;
+    text-align: center;
+    cursor: pointer;
+    background: #bbc2c8;
+    background: -moz-linear-gradient(top,  #bbc2c8 0%, #b0b3ba 50%, #a9adb4 50%, #adb1b8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbc2c8), color-stop(50%,#b0b3ba), color-stop(50%,#a9adb4), color-stop(100%,#adb1b8));
+    background: -webkit-linear-gradient(top,  #bbc2c8 0%,#b0b3ba 50%,#a9adb4 50%,#adb1b8 100%);
+    background: -o-linear-gradient(top,  #bbc2c8 0%,#b0b3ba 50%,#a9adb4 50%,#adb1b8 100%);
+    background: -ms-linear-gradient(top,  #bbc2c8 0%,#b0b3ba 50%,#a9adb4 50%,#adb1b8 100%);
+    background: linear-gradient(to bottom,  #bbc2c8 0%,#b0b3ba 50%,#a9adb4 50%,#adb1b8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbc2c8', endColorstr='#adb1b8',GradientType=0 );
+    color: #000;
+    text-transform: uppercase;
+}
 
 
+.game-box .btn.active, .game-box .btn:hover{
+    background: #d9be7c;
+    background: -moz-linear-gradient(top,  #d9be7c 0%, #d0ae5e 50%, #cca74f 50%, #cfac5a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d9be7c), color-stop(50%,#d0ae5e), color-stop(50%,#cca74f), color-stop(100%,#cfac5a));
+    background: -webkit-linear-gradient(top,  #d9be7c 0%,#d0ae5e 50%,#cca74f 50%,#cfac5a 100%);
+    background: -o-linear-gradient(top,  #d9be7c 0%,#d0ae5e 50%,#cca74f 50%,#cfac5a 100%);
+    background: -ms-linear-gradient(top,  #d9be7c 0%,#d0ae5e 50%,#cca74f 50%,#cfac5a 100%);
+    background: linear-gradient(to bottom,  #d9be7c 0%,#d0ae5e 50%,#cca74f 50%,#cfac5a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9be7c', endColorstr='#cfac5a',GradientType=0 );
+}
 
+.game-box .name {
+    width: 125px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    margin-top: 2px;
+}
+
+.game-box .count {
+    display: block;
+    float: right;
+    position: relative;
+    margin-top: 2px;
+}
+
+
+.game-box .delete_bet {
+    display: block;
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #6a7376;
+    border-radius: 2px;
+    cursor: pointer;
+    background: none;
+    padding: 1px;
+    text-align: center;
+}
+
+.game-box .delete_bet:hover{
+    background: #bbc1c7;
+}
+
+.ico-delete{
+    width: 10px;
+    height: 10px;
+    background: url('../img/sprite.png') no-repeat -38px -77px;
+    display: inline-block;
+}
+
+.ticket-info{
+    float: left;
+    width: 100%;
+    font-size: 10px;
+    color: #000;
+}
+
+.ticket-info table{
+    width: 100%;
+}
+
+.ticket-system{
+    float: left;
+    width: 100%;
+    margin: 5px 0 0 0;
+}
+
+.ticket-system a{
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    background: #a7b0ae;
+    background: -moz-linear-gradient(top,  #a7b0ae 0%, #979ba3 50%, #8d929a 50%, #9398a0 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a7b0ae), color-stop(50%,#979ba3), color-stop(50%,#8d929a), color-stop(100%,#9398a0));
+    background: -webkit-linear-gradient(top,  #a7b0ae 0%,#979ba3 50%,#8d929a 50%,#9398a0 100%);
+    background: -o-linear-gradient(top,  #a7b0ae 0%,#979ba3 50%,#8d929a 50%,#9398a0 100%);
+    background: -ms-linear-gradient(top,  #a7b0ae 0%,#979ba3 50%,#8d929a 50%,#9398a0 100%);
+    background: linear-gradient(to bottom,  #a7b0ae 0%,#979ba3 50%,#8d929a 50%,#9398a0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7b0ae', endColorstr='#9398a0',GradientType=0 );
+    border: 0;
+    border-radius: 3px;
+    padding: 6px 28px 6px 10px;
+    outline: 0;
+    margin: 0px;
+    position: relative;
+}
+
+.arrow-down{
+    width: 9px;
+    height: 5px;
+    background: url('../img/sprite.png') no-repeat -38px -96px;
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    z-index: 1;
+}
+
+.system-select{
+    display: none;
+    background: #65696d;
+    border-radius: 0 0 3px 3px;
+    padding: 10px;
+    float: left;
+    width: 100%;
+}
+
+.system-select label{
+    font-size: 11px;
+    font-weight: 400;
+    float: left;
+    width: 50%;
+    margin: 0 0 5px 0;
+}
+
+.ticket-system.active .system-select{
+    display: block;
+}
+
+.ticket-system.active .arrow-down{
+    background-position: -38px -111px;
+}
+
+/* eof ticket sidebar */
 
 
 /* eof sidebar */
