@@ -168,7 +168,7 @@ button{
     background: #4f5961;
 }
 
-.btn-green{
+/*.btn-green{
     font-family: 'Roboto', sans-serif !important;;
     font-size: 11px !important;;
     border-top: 1px solid #a3a297;
@@ -188,9 +188,9 @@ button{
 
 .btn-green:hover{
     background: #409254;
-}
+}*/
 
-a.btn-gray, a.btn-green{
+a.btn-gray{
     padding: 5px 14px;
 }
 
