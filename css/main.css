@@ -1053,6 +1053,73 @@ input[type=number]::-webkit-inner-spin-button{
 /* eof casino */
 
 
+/* member login */
+
+.login-wrapper{
+    border-top: 1px solid #5c6268;
+    color: #fff;
+    float: left;
+    width: 100%;
+    padding: 12px;
+}
+
+.login{
+    margin: 70px auto 0 auto;
+    width: 280px;
+}
+
+.barcode-wrapper{
+    float: left;
+    width: 100%;
+    margin: 0 0 15px 0;
+}
+
+.serial-no{
+    float: left;
+}
+
+.barcode{
+    float: right;
+}
+
+.member-login input[type="text"], .voucher-login input[type="text"]{
+    float: left;
+    width: 185px;
+    margin-bottom: 15px;
+}
+
+.hide-entry{
+    float: left;
+    margin: 7px 0 0 10px;
+}
+
+.hide-entry  input[type="checkbox"]{
+    margin: 0 4px 0 0;
+    float: left;
+}
+
+.hide-entry span{
+    float: left;
+}
+
+.login-btns{
+    float: left;
+    width: 185px;
+    margin: 0;
+}
+
+.login-btns .btn-gray{
+    min-width: 87px;
+    max-width: 87px;
+    text-align: center;
+}
+
+/* eof member login */
+
+
+
+
+
 /* footer */
 
 .footer{
@@ -1101,6 +1168,10 @@ input[type=number]::-webkit-inner-spin-button{
     padding: 6px 12px;
     float: left;
     font-size: 10px;
+}
+
+.footer-links ul li a:hover{
+    text-decoration: underline;
 }
 
 .copyright{
