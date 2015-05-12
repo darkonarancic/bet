@@ -168,6 +168,55 @@ button{
     background: #4f5961;
 }
 
+.btn-green{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 11px !important;
+    border-top: 1px solid #a3a297;
+    color: #fff;
+    height: 25px;
+    border-radius: 3px;
+    padding: 0 14px;
+    background: #64ac6f;
+    background: -moz-linear-gradient(top,  #64ac6f 0%, #48975c 50%, #398d4f 50%, #409254 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#64ac6f), color-stop(50%,#48975c), color-stop(50%,#398d4f), color-stop(100%,#409254));
+    background: -webkit-linear-gradient(top,  #64ac6f 0%,#48975c 50%,#398d4f 50%,#409254 100%);
+    background: -o-linear-gradient(top,  #64ac6f 0%,#48975c 50%,#398d4f 50%,#409254 100%);
+    background: -ms-linear-gradient(top,  #64ac6f 0%,#48975c 50%,#398d4f 50%,#409254 100%);
+    background: linear-gradient(to bottom,  #64ac6f 0%,#48975c 50%,#398d4f 50%,#409254 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64ac6f', endColorstr='#409254',GradientType=0 );
+}
+
+.btn-green:hover{
+    background: #409254;
+}
+
+.btn-yellow{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 11px !important;
+    border-top: 1px solid #d9be7c;
+    font-weight: 500;
+    color: #181818;
+    height: 25px;
+    border-radius: 3px;
+    padding: 0 14px;
+    background: #d9be7c;
+    background: -moz-linear-gradient(top,  #d9be7c 0%, #d0ae5e 50%, #cca74f 50%, #cfac5a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d9be7c), color-stop(50%,#d0ae5e), color-stop(50%,#cca74f), color-stop(100%,#cfac5a));
+    background: -webkit-linear-gradient(top,  #d9be7c 0%,#d0ae5e 50%,#cca74f 50%,#cfac5a 100%);
+    background: -o-linear-gradient(top,  #d9be7c 0%,#d0ae5e 50%,#cca74f 50%,#cfac5a 100%);
+    background: -ms-linear-gradient(top,  #d9be7c 0%,#d0ae5e 50%,#cca74f 50%,#cfac5a 100%);
+    background: linear-gradient(to bottom,  #d9be7c 0%,#d0ae5e 50%,#cca74f 50%,#cfac5a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9be7c', endColorstr='#cfac5a',GradientType=0 );
+}
+
+.btn-yellow:hover{
+    background: #d9be7c;
+}
+
+a.btn-gray, a.btn-green, a.btn-yellow{
+    padding: 5px 14px;
+}
+
 .login-form input[type="text"], .login-form input[type="password"]{
     float: left;
     margin: 0 2px 0 0;
