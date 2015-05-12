@@ -120,24 +120,33 @@
                 <li class="golf"><div class="ico"><img alt="" src="img/ico-game-golf.png"></div><em>Golf</em>52</li>
             </ul>
 
-            <div class="login-wrapper">
-                Log on to the system using the code from your card
-                <div class="login">
-                    <div class="barcode-wrapper">
-                        <span class="serial-no">Value: ***</span>
-                        <div class="barcode"><img alt="barcode" src="img/barcode.png" width="152" height="22"></div>
-                    </div>
-                    <form class="voucher-login" method="post">
+            <div class="register-wrapper">
+                Register Account<br>
+                Create an account for FREE and enjoy a better user experience
+                <span class="right">(*) Required Fields</span>
+                <div class="register">
+                    <form class="register" method="post">
                         <fieldset>
-                            <input type="text" placeholder="Voucher Number">
-                            <input type="text" placeholder="Voucher Code">
-                            <label class="hide-entry">
-                                <input type="checkbox"><span>Hide entry</span>
+
+                            <label class="register-label">Username *</label>
+                            <input type="text" class="register-field">
+                            <span class="register-info">6-16 characters<br> (A-Z 0-9)</span>
+
+                            <label class="register-label">Password *</label>
+                            <input type="password" class="register-field">
+                            <span class="register-info">6-32 characters</span>
+
+                            <label class="register-label">Confirm password *</label>
+                            <input type="password" class="register-field">
+
+                            <div class="clear"></div>
+                            <label class="terms">
+                                <input type="checkbox"><span>I agree to the <a href="#">Terms and conditions</a></span>
                             </label>
-                            <div class="login-btns">
-                                <a href="#" class="btn-gray left">Cancel</a>
-                                <button class="btn-gray right">Ok</button>
-                            </div>
+
+                            <div class="clear"></div>
+                            <button class="btn-yellow register-btn">Register Account</button>
+
                         </fieldset>
                     </form>
                 </div>

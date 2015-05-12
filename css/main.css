@@ -169,8 +169,8 @@ button{
 }
 
 .btn-green{
-    font-family: 'Roboto', sans-serif !important;;
-    font-size: 11px !important;;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 11px !important;
     border-top: 1px solid #a3a297;
     color: #fff;
     height: 25px;
@@ -190,7 +190,30 @@ button{
     background: #409254;
 }
 
-a.btn-gray, a.btn-green{
+.btn-yellow{
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 11px !important;
+    border-top: 1px solid #d9be7c;
+    font-weight: 500;
+    color: #181818;
+    height: 25px;
+    border-radius: 3px;
+    padding: 0 14px;
+    background: #d9be7c;
+    background: -moz-linear-gradient(top,  #d9be7c 0%, #d0ae5e 50%, #cca74f 50%, #cfac5a 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d9be7c), color-stop(50%,#d0ae5e), color-stop(50%,#cca74f), color-stop(100%,#cfac5a));
+    background: -webkit-linear-gradient(top,  #d9be7c 0%,#d0ae5e 50%,#cca74f 50%,#cfac5a 100%);
+    background: -o-linear-gradient(top,  #d9be7c 0%,#d0ae5e 50%,#cca74f 50%,#cfac5a 100%);
+    background: -ms-linear-gradient(top,  #d9be7c 0%,#d0ae5e 50%,#cca74f 50%,#cfac5a 100%);
+    background: linear-gradient(to bottom,  #d9be7c 0%,#d0ae5e 50%,#cca74f 50%,#cfac5a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9be7c', endColorstr='#cfac5a',GradientType=0 );
+}
+
+.btn-yellow:hover{
+    background: #d9be7c;
+}
+
+a.btn-gray, a.btn-green, a.btn-yellow{
     padding: 5px 14px;
 }
 
@@ -385,6 +408,8 @@ a.forgot:hover{
 .main-navigation li.register{
     position: absolute;
     right: 11px;
+    width: auto;
+    margin: 5px 1px 0 0
 }
 
 .main-navigation li.register a{
@@ -1053,9 +1078,9 @@ input[type=number]::-webkit-inner-spin-button{
 /* eof casino */
 
 
-/* member login */
+/* login and register */
 
-.login-wrapper{
+.login-wrapper, .register-wrapper{
     border-top: 1px solid #5c6268;
     color: #fff;
     float: left;
@@ -1063,7 +1088,7 @@ input[type=number]::-webkit-inner-spin-button{
     padding: 12px;
 }
 
-.login{
+.login, .register{
     margin: 70px auto 0 auto;
     width: 280px;
 }
@@ -1082,7 +1107,7 @@ input[type=number]::-webkit-inner-spin-button{
     float: right;
 }
 
-.member-login input[type="text"], .voucher-login input[type="text"]{
+.member-login input[type="text"], .voucher-login input[type="text"], .register input[type="text"],.register input[type="password"]{
     float: left;
     width: 185px;
     margin-bottom: 15px;
@@ -1114,7 +1139,43 @@ input[type=number]::-webkit-inner-spin-button{
     text-align: center;
 }
 
-/* eof member login */
+.register-label{
+    float: left;
+    width: 100%;
+    margin: 0 0 4px 0;
+}
+
+.register-info{
+    float: left;
+    color: #c6ccde;
+    margin: 0 0 0 8px;
+    font-size: 10px;
+}
+
+.terms{
+    float: left;
+    margin: 20px 0 0 0;
+}
+
+.terms  input[type="checkbox"]{
+    margin: 0 4px 0 0;
+    float: left;
+}
+
+.terms a{
+    color: #0c5892;
+}
+
+.terms a:hover{
+    color: #fff;
+}
+
+.register-btn{
+    margin: 15px 0 0 0;
+    width: 185px;
+}
+
+/* eof login and register */
 
 
 
