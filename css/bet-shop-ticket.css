@@ -96,11 +96,17 @@ select::-ms-expand { /* for IE 11 */
 .list-table > table > tbody > tr > td:nth-of-type(2) {
 	padding: 0 0 0 10px;
 }
+.list-table > table > thead > tr > td:nth-of-type(2) {
+	padding: 0 0 0 12px;
+}
 .list-table > table > tbody > tr > td > div {
 	line-height: 26px;
 }
 .list-table > table > thead > tr > td > div {
 	min-height: 32px;
+}
+.list-table > table > thead > tr > td {
+	line-height: 32px;
 }
 .list-table > table > tbody > tr > td > div {
 	min-height: 46px;
@@ -287,6 +293,38 @@ select::-ms-expand { /* for IE 11 */
 	display: table-cell;
   	vertical-align: middle;
 }
+.list-table > table > tbody .score.score-row {
+	text-align: right;
+	display: inline-block;
+}
+.list-table > table > tbody .score.score-row > .final-result {
+	text-align: center;
+	padding: 0;
+	margin: 0 -5px 0 0;
+	display: inline-block;
+}
+.list-table > table > tbody .score.score-row > .final-result li {
+	width: 32px;
+	float: none;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+	display: inline-block;
+	margin: 10px 0;
+	color:#ffb30f;
+	text-align: center;
+}
+.list-table > table > tbody .score.score-row > .final-result li:nth-of-type(2) {
+
+}
+.list-table > table > tbody .score.score-row > .final-result li:nth-of-type(3):before {
+	content: "-";
+	position: relative;
+	left: -8px;
+}
+.list-table > table > tbody .score.score-row > .final-result li:last-of-type {
+	padding-right: 0;
+}
 .list-table > table > tbody .score {
 	width: 100%;
 	display: table;
@@ -450,3 +488,7 @@ select::-ms-expand { /* for IE 11 */
 	width: 134px;
 }
 /* eof lsit table details */
+
+.text-center {
+	text-align: center !important;
+}
